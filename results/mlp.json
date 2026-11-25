@@ -1,0 +1,7 @@
+{
+  "model": "Neural Network MLP (складна)",
+  "accuracy": 0.6667,
+  "f1_macro": 0.6681,
+  "train_time_s": 0.811,
+  "predict_time_s": 0.0013
+}

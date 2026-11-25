@@ -1,0 +1,7 @@
+{
+  "model": "Random Forest (середня)",
+  "accuracy": 0.5933,
+  "f1_macro": 0.5827,
+  "train_time_s": 0.47,
+  "predict_time_s": 0.0411
+}

@@ -1,5 +1,7 @@
 # Класифікація жанру книжки за уривком тексту
 
+Навчальний проєкт з предмету «Основи штучного інтелекту».
+
 **Задача:** за уривком книжки (200 слів англійською) визначити її жанр: детектив, фантастика або романтика/класика.
 **Що зроблено:** зібрано власний датасет із книжок Project Gutenberg, навчено три моделі різної складності
 (логістична регресія, Random Forest, нейромережа) і порівняно їх за точністю та швидкістю.
@@ -31,6 +33,41 @@
   Уривки однієї книжки ніколи не потрапляють одночасно і в навчання, і в тест, тому точність не завищена.
 
 ## Як запустити
+
+### Mac / Linux
+Відкрий Термінал, перейди в папку проєкту (`cd ~/Desktop/project`) і виконай:
+
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python 1_prepare_data.py
+python 2_model_logreg.py
+python 3_model_random_forest.py
+python 4_model_neural_net.py
+python 5_results_and_plots.py
+```
+
+Наступного разу достатньо `cd ~/Desktop/project`, `source venv/bin/activate` і п'яти команд `python ...`.
+
+### Windows
+```
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python 1_prepare_data.py
+... (далі так само, файли 2-5)
+```
+
+### Google Colab (без встановлення)
+Завантаж у Colab усі файли з проєкту і виконай в одній комірці:
+```
+!python 1_prepare_data.py
+!python 2_model_logreg.py
+!python 3_model_random_forest.py
+!python 4_model_neural_net.py
+!python 5_results_and_plots.py
+```
 
 **Важливо:** файли запускаються по черзі, від 1 до 5. Файли 2-4 потребують результату файлу 1.
 

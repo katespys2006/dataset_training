@@ -1,0 +1,7 @@
+{
+  "model": "Logistic Regression (проста)",
+  "accuracy": 0.61,
+  "f1_macro": 0.6002,
+  "train_time_s": 0.056,
+  "predict_time_s": 0.0004
+}
